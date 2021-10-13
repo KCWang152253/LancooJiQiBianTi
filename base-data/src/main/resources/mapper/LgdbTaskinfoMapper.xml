@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lancoo.mapper.LgdbTaskinfoMapper" >
+  <resultMap id="BaseResultMap" type="com.lancoo.pojo.LgdbTaskinfo" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="TaskId" property="taskid" jdbcType="NVARCHAR" />
+    <result column="KnowledgeCodes" property="knowledgecodes" jdbcType="NVARCHAR" />
+    <result column="Stage" property="stage" jdbcType="NVARCHAR" />
+    <result column="QuesType" property="questype" jdbcType="NVARCHAR" />
+    <result column="Result" property="result" jdbcType="NVARCHAR" />
+    <result column="TaskDate" property="taskdate" jdbcType="TIMESTAMP" />
+  </resultMap>
+
+
+  <select id="findLgdbTaskInfoByIds" resultMap="BaseResultMap" >
+    select * from Lgdb_TaskInfo where CONVERT(NVARCHAR(7),TaskDate,120)=  #{TaskDate} and Stage = #{Stage}
+  </select>
+
+
+
+</mapper>

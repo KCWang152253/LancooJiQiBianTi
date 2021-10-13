@@ -1,0 +1,5 @@
+# Project exclude paths
+/base-api/target/
+/base-common/target/
+/base-data/target/
+/base-service/target/

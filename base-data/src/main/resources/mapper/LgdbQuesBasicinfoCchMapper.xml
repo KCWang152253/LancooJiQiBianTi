@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lancoo.mapper.LgdbQuesBasicinfoCchMapper" >
+  <resultMap id="BaseResultMap" type="com.lancoo.pojo.LgdbQuesBasicinfoCch" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="Guid" property="guid" jdbcType="NVARCHAR" />
+    <result column="Res_DigitizationId" property="resDigitizationid" jdbcType="NVARCHAR" />
+    <result column="TaskId" property="taskid" jdbcType="NVARCHAR" />
+    <result column="PackageId" property="packageid" jdbcType="NVARCHAR" />
+    <result column="ResStatus" property="resstatus" jdbcType="INTEGER" />
+    <result column="PackageStatus" property="packagestatus" jdbcType="INTEGER" />
+    <result column="ResPath" property="respath" jdbcType="NVARCHAR" />
+    <result column="ResSize" property="ressize" jdbcType="DECIMAL" />
+    <result column="ResFilenum" property="resfilenum" jdbcType="DECIMAL" />
+    <result column="ResMd5Code" property="resmd5code" jdbcType="NVARCHAR" />
+    <result column="QuesContent" property="quescontent" jdbcType="LONGNVARCHAR" />
+    <result column="QuesType" property="questype" jdbcType="NVARCHAR" />
+    <result column="QuesChildnum" property="queschildnum" jdbcType="DECIMAL" />
+    <result column="QuesChildcount" property="queschildcount" jdbcType="DECIMAL" />
+    <result column="QuesGenre" property="quesgenre" jdbcType="DECIMAL" />
+    <result column="QuesMediaUrl" property="quesmediaurl" jdbcType="NVARCHAR" />
+    <result column="DurationLength" property="durationlength" jdbcType="DECIMAL" />
+    <result column="AudioPlayTimes" property="audioplaytimes" jdbcType="DECIMAL" />
+    <result column="Res_Sub" property="resSub" jdbcType="NVARCHAR" />
+    <result column="Res_Stage" property="resStage" jdbcType="NVARCHAR" />
+    <result column="Res_Level" property="resLevel" jdbcType="NVARCHAR" />
+    <result column="Res_Lib" property="resLib" jdbcType="NVARCHAR" />
+    <result column="Res_Theme" property="resTheme" jdbcType="NVARCHAR" />
+    <result column="Res_ThemeCode" property="resThemecode" jdbcType="NVARCHAR" />
+    <result column="Res_Importantklg" property="resImportantklg" jdbcType="NVARCHAR" />
+    <result column="Res_ImportantklgCode" property="resImportantklgcode" jdbcType="NVARCHAR" />
+    <result column="Res_Mainklg" property="resMainklg" jdbcType="NVARCHAR" />
+    <result column="Res_MainklgCode" property="resMainklgcode" jdbcType="NVARCHAR" />
+    <result column="WordNum" property="wordnum" jdbcType="DECIMAL" />
+    <result column="DBType" property="dbtype" jdbcType="INTEGER" />
+    <result column="Datatable_Name" property="datatableName" jdbcType="NVARCHAR" />
+    <result column="ReviewUserId" property="reviewuserid" jdbcType="NVARCHAR" />
+    <result column="ReViewDate" property="reviewdate" jdbcType="TIMESTAMP" />
+    <result column="CheckUserId" property="checkuserid" jdbcType="NVARCHAR" />
+    <result column="CheckDate" property="checkdate" jdbcType="TIMESTAMP" />
+    <result column="TOPIC_CODE" property="topicCode" jdbcType="NVARCHAR" />
+    <result column="TOPIC_TEXT" property="topicText" jdbcType="NVARCHAR" />
+    <result column="RELATED_KNOWLEDGE_CODE" property="relatedKnowledgeCode" jdbcType="NVARCHAR" />
+    <result column="RELATED_KNOWLEDGE_TEXT" property="relatedKnowledgeText" jdbcType="NVARCHAR" />
+    <result column="THEMATIC_KNOWLEDGE_CODE" property="thematicKnowledgeCode" jdbcType="NVARCHAR" />
+    <result column="THEMATIC_KNOWLEDGE_TEXT" property="thematicKnowledgeText" jdbcType="NVARCHAR" />
+    <result column="KnowledgeName" property="knowledgename" jdbcType="NVARCHAR" />
+    <result column="Out_KnowledgeName" property="outKnowledgename" jdbcType="NVARCHAR" />
+    <result column="Reason" property="reason" jdbcType="NVARCHAR" />
+    <result column="Store_Date" property="storeDate" jdbcType="TIMESTAMP" />
+    <result column="Sentence" property="sentence" jdbcType="NVARCHAR" />
+    <result column="QuesContentStn" property="quescontentstn" jdbcType="LONGNVARCHAR" />
+    <result column="IMPOR_KN_UNIQUECODE" property="imporKnUniquecode" jdbcType="NVARCHAR" />
+    <result column="MAIN_KN_UNIQUECODE" property="mainKnUniquecode" jdbcType="NVARCHAR" />
+    <result column="TOPIC_UNIQUECODE" property="topicUniquecode" jdbcType="NVARCHAR" />
+    <result column="CommitDate" property="commitdate" jdbcType="TIMESTAMP" />
+    <result column="NewProperty" property="newproperty" jdbcType="NVARCHAR" />
+  </resultMap>
+</mapper>

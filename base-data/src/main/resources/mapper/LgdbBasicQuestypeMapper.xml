@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lancoo.mapper.LgdbBasicQuestypeMapper" >
+  <resultMap id="BaseResultMap" type="com.lancoo.pojo.LgdbBasicQuestype" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="REC_ID" property="recId" jdbcType="INTEGER" />
+    <result column="QUESTYPE_CODE" property="questypeCode" jdbcType="NVARCHAR" />
+    <result column="QUESTYPE_NAME" property="questypeName" jdbcType="NVARCHAR" />
+    <result column="QUESTYPE_SEQUENCE" property="questypeSequence" jdbcType="DECIMAL" />
+    <result column="ANS_TYPE" property="ansType" jdbcType="DECIMAL" />
+    <result column="MULTI_ANS_TYPE" property="multiAnsType" jdbcType="DECIMAL" />
+    <result column="SUB_OBJ" property="subObj" jdbcType="DECIMAL" />
+    <result column="TEST_SKILL" property="testSkill" jdbcType="DECIMAL" />
+    <result column="QUES_TAG" property="quesTag" jdbcType="DECIMAL" />
+    <result column="OLD_CODE" property="oldCode" jdbcType="NVARCHAR" />
+    <result column="OLD_CODE_MULTI" property="oldCodeMulti" jdbcType="NVARCHAR" />
+  </resultMap>
+  <!-- 批量删除个人库试题信息 -->
+  <!-- <delete id="deleteQuesInfoByFixedIds">
+       delete from Lgdb_ResCatalog_Private
+       where FIXED_ID=
+       <foreach collection="fixedIds" item="item" index="index" open="(" separator="," close=")">
+           #{item}
+       </foreach>
+   </delete>
+   <select id="findByIds" resultMap="BaseResultMap" parameterType="java.util.List">
+       select * from Lgdb_ResCatalog_Private
+       where FIXED_ID in
+       <foreach collection="list" item="fixId" index="index" open="(" close=")" separator=",">
+           #{fixId}
+       </foreach>
+   </select>-->
+
+
+</mapper>

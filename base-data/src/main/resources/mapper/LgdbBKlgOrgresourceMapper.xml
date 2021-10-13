@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lancoo.mapper.LgdbBKlgOrgresourceMapper">
+    <resultMap id="BaseResultMap" type="com.lancoo.pojo.LgdbBKlgOrgresource">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="ID" property="id" jdbcType="BIGINT"/>
+        <result column="KnowledgeCode" property="knowledgecode" jdbcType="VARCHAR"/>
+        <result column="KnowledgeName" property="knowledgename" jdbcType="NVARCHAR"/>
+        <result column="KnowledgeType" property="knowledgetype" jdbcType="VARCHAR"/>
+        <result column="MainContext" property="maincontext" jdbcType="NVARCHAR"/>
+        <result column="SecondContext" property="secondcontext" jdbcType="NVARCHAR"/>
+        <result column="Sentence" property="sentence" jdbcType="NVARCHAR"/>
+        <result column="Translate" property="translate" jdbcType="NVARCHAR"/>
+        <result column="SingleType" property="singletype" jdbcType="NVARCHAR"/>
+        <result column="UN_Phonetic" property="unPhonetic" jdbcType="NVARCHAR"/>
+        <result column="US_Phonetic" property="usPhonetic" jdbcType="NVARCHAR"/>
+        <result column="Source" property="source" jdbcType="NVARCHAR"/>
+        <result column="IsSelect" property="isselect" jdbcType="INTEGER"/>
+        <result column="Flag" property="flag" jdbcType="INTEGER"/>
+        <result column="TaskId" property="taskid" jdbcType="NVARCHAR"/>
+        <result column="QuesType" property="questype" jdbcType="NVARCHAR"/>
+        <result column="IsDelete" property="isdelete" jdbcType="INTEGER"/>
+        <result column="IsRepeat" property="isrepeat" jdbcType="NVARCHAR"/>
+    </resultMap>
+    <!--  ${count} 用#会自动添加引号，$不加引号和传入的值一致-->
+    <select id="findLgdbBKlgOrgresources" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+        SELECT top ${count} ID
+      ,IsSelect
+             , Sentence
+             , KnowledgeCode
+             , KnowledgeName
+             , SingleType
+             , KnowledgeType
+             , QuesType
+             , UN_Phonetic
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE  UN_Phonetic !='' and  QuesType= '' and  KnowledgeType ='英语单词' and  Sentence !=''
+          and KnowledgeCode  collate Chinese_PRC_CI_AI_WS not in
+            (select KnowledgeCode from Lgdb_Basic_KnowledgeAndCode where (SubSubject='词法词汇'
+          and Topic='词汇'
+          and Theme='感叹词'))  ORDER BY NEWID()
+
+     </select>
+
+    <select id="findQuesTypeByIdStage" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+        SELECT QuesType
+        FROM dbo.Lgdb_${Stage}_Klg_OrgResource where ID=${id}
+    </select>
+
+    <select id="findLgdbBKlgOrgresourcesByIsDeleteIsSelect" resultType="java.lang.String">
+        SELECT top 20000  SingleType
+        FROM LGDB_ResBuild_V1.dbo.Lgdb_B_Klg_OrgResource
+        where IsDelete = 0
+          and IsSelect!=0  and  SingleType like '%${number}%'
+        ORDER BY NEWID()
+    </select>
+    <select id="findLgdbBKlgOrgresources1" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+
+        SELECT top ${count} ID
+      ,IsSelect
+             , Sentence
+             , KnowledgeCode
+             , KnowledgeName
+             , SingleType
+             , KnowledgeType
+             , QuesType
+             , US_Phonetic
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE QuesType= '' and    Sentence !=''  and KnowledgeType in ('英语常用表达','英语词组')  ORDER BY NEWID()
+    </select>
+    <select id="findLgdbBKlgOrgresourcesExpressBy" resultType="java.lang.String" parameterType="java.lang.String">
+        SELECT top 20000  SingleType
+        FROM LGDB_ResBuild_V1.dbo.Lgdb_B_Klg_OrgResource
+        where IsDelete = 0
+          and IsSelect!=0  and  SingleType like '%${number}%' and KnowledgeType in ('英语常用表达','英语词组')
+        ORDER BY NEWID()
+    </select>
+
+    <select id="findLgdbBKlgOrgresources2" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+
+        SELECT top ${count} ID
+      ,IsSelect
+             , Sentence
+             , KnowledgeCode
+             , KnowledgeName
+             , SingleType
+             , KnowledgeType
+             , QuesType
+             , US_Phonetic
+             , MainContext
+             , Translate
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE  Sentence != '' and    QuesType IN ('N21','N22')  and Translate != ''  and  MainContext !='' and  KnowledgeType = '英语单词'
+
+          and KnowledgeCode  collate Chinese_PRC_CI_AI_WS not in
+            (select KnowledgeCode from Lgdb_Basic_KnowledgeAndCode
+            where (  (SubSubject='词法词汇' and Topic = '词汇' and Theme = '冠词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '代词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '情态动词及助动词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '介词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '感叹词')
+           or (SubSubject='常识词汇及常用表达' and Topic = '基本常识' and Theme = '数字')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '连词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '数词')
+
+            ))  ORDER BY NEWID()
+
+    </select>
+    <select id="findLgdbBKlgOrgresources3" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+        SELECT top ${count} ID
+      ,IsSelect
+             , Sentence
+             , KnowledgeCode
+             , KnowledgeName
+             , SingleType
+             , KnowledgeType
+             , QuesType
+             , US_Phonetic
+             , MainContext
+             , Translate
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE  QuesType IN ('N21','N22') and  Sentence !='' and KnowledgeType = '英语词组'
+          and  KnowledgeCode  collate Chinese_PRC_CI_AI_WS not in ( select KnowledgeCode from dbo.Lgdb_Basic_KnowledgeAndCode
+     where ((SubSubject='词法词汇' and Topic = '词汇' and Theme = '情态动词及助动词')
+            or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '冠词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '感叹词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '代词')
+            )  ) ORDER BY NEWID()
+    </select>
+
+
+    <select id="findLgdbBKlgOrgresources4" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+        SELECT top ${count} ID
+             ,IsSelect
+             , Sentence
+             , KnowledgeCode
+             , KnowledgeName
+             , SingleType
+             , KnowledgeType
+             , QuesType
+             , US_Phonetic
+             , MainContext
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+            WHERE  QuesType = '' and  Sentence !='' and KnowledgeCode  collate Chinese_PRC_CI_AI_WS not in ( select KnowledgeCode from dbo.Lgdb_Basic_KnowledgeAndCode
+            where Theme in('实意动词及系动词','情态动词及助动词'))   ORDER BY NEWID()
+
+    </select>
+    <select id="findLgdbBKlgOrgresources5" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+--         选词填空,N,20,动词属性,英语单词
+        SELECT top ${count} ID
+             ,IsSelect
+             , Sentence
+             , KnowledgeCode
+             , KnowledgeName
+             , SingleType
+             , KnowledgeType
+             , QuesType
+             , US_Phonetic
+             , MainContext
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE     QuesType= '' and KnowledgeType = '英语单词'   and Sentence !='' and  KnowledgeCode  collate Chinese_PRC_CI_AI_WS in ( select KnowledgeCode from dbo.Lgdb_Basic_KnowledgeAndCode
+            where (SubSubject='词法词汇' and Topic = '词汇' and Theme = '实意动词及系动词')
+           )    ORDER BY NEWID()
+--
+--             or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '感叹词')
+--             or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '数词')
+--             or (SubSubject='常识词汇及常用表达' and Topic = '基本常识' and Theme = '数字')
+--             or (SubSubject='常识词汇及常用表达' and Topic = '社会交际' )
+
+
+
+
+
+    </select>
+    <select id="findLgdbBKlgOrgresources6" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+
+        SELECT top ${count} ID
+             ,IsSelect
+             , Sentence
+             , KnowledgeCode
+             , KnowledgeName
+             , SingleType
+             , KnowledgeType
+             , QuesType
+             , US_Phonetic
+             , MainContext
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource] where  Sentence != '' and QuesType= '' ORDER BY NEWID()
+
+    </select>
+    <select id="findLgdbBKlgOrgresources7" resultType="com.lancoo.pojo.LgdbBKlgOrgresource"
+            parameterType="java.lang.String">
+
+-- 选词填空,N,20,复合属性,英语单词
+        select top 1 * from (select  distinct * from LGDB_ResBuild_V1.dbo.Lgdb_${Stage}_Klg_OrgResource where
+            KnowledgeName !='' and QuesType= ''
+          and Sentence != ''  and KnowledgeType = '英语单词' and KnowledgeCode  collate Chinese_PRC_CI_AI_WS in (SELECT KnowledgeCode
+        from [LGDB_ResBuild_V1].[dbo].[Lgdb_Basic_KnowledgeAndCode] WHERE (Theme = #{theme} and Is_shield !=1 ))
+            ) as a order by NEWID()
+
+
+    </select>
+    <select id="findLgdbBKlgOrgresources8" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+        SELECT top ${count} ID
+      ,IsSelect
+             , Sentence
+             , KnowledgeCode
+             , KnowledgeName
+             , SingleType
+             , KnowledgeType
+             , QuesType
+             , US_Phonetic
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE QuesType= '' and Sentence != '' and  KnowledgeType = '英语常用表达'   and KnowledgeCode  collate Chinese_PRC_CI_AI_WS not in
+            (select KnowledgeCode from Lgdb_Basic_KnowledgeAndCode
+            where  (SubSubject='词法词汇' and Topic = '词汇' and Theme = '感叹词'))  ORDER BY NEWID()
+
+    </select>
+    <select id="findLgdbBKlgOrgresources9" resultType="java.lang.String" parameterType="java.lang.String">
+
+        SELECT top 100
+              KnowledgeName
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE   KnowledgeType = #{knowledgetype}  and Sentence != ''  and KnowledgeCode  collate Chinese_PRC_CI_AI_WS in
+            (select KnowledgeCode from Lgdb_Basic_KnowledgeAndCode where ( Theme !=  #{theme}))  ORDER BY NEWID()
+    </select>
+    <select id="findLgdbBKlgOrgresources10" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+
+        SELECT top ${count} ID
+      ,IsSelect
+             , Sentence
+             , KnowledgeCode
+             , KnowledgeName
+             , SingleType
+             , KnowledgeType
+             , QuesType
+             , US_Phonetic
+             , MainContext
+             , Translate
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE  Sentence != '' and   QuesType= ''   and  KnowledgeType in ('英语单词','英语词组')
+          and KnowledgeCode  collate Chinese_PRC_CI_AI_WS not in
+            (select KnowledgeCode from Lgdb_Basic_KnowledgeAndCode
+            where  (SubSubject='词法词汇' and Topic = '词汇' and Theme = '感叹词'))  ORDER BY NEWID()
+
+    </select>
+    <select id="findLgdbBKlgOrgresources11" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+        SELECT top ${count} ID,IsSelect, Sentence, KnowledgeCode, KnowledgeName, SingleType , KnowledgeType
+             , QuesType , UN_Phonetic
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE  UN_Phonetic !='' and   QuesType IN ('N21','N22') and  KnowledgeType = '英语单词'  and Sentence != ''
+          and KnowledgeCode  collate Chinese_PRC_CI_AI_WS  in
+            (select KnowledgeCode from Lgdb_Basic_KnowledgeAndCode
+ where (  (SubSubject='词法词汇' and Topic = '词汇' and Theme = '介词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '代词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '情态动词及助动词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '连词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '冠词')
+
+            ))  ORDER BY NEWID()
+
+    </select>
+    <select id="findLgdbBKlgOrgresources12" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+
+        SELECT top ${count} ID,IsSelect, Sentence, KnowledgeCode, KnowledgeName, SingleType , KnowledgeType
+             , QuesType , UN_Phonetic
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE  UN_Phonetic !='' and   QuesType IN ('N21','N22') and  KnowledgeType = '英语单词'  and Sentence != ''
+          and KnowledgeCode  collate Chinese_PRC_CI_AI_WS not in
+            (select KnowledgeCode from Lgdb_Basic_KnowledgeAndCode
+            where (  (SubSubject='词法词汇' and Topic = '词汇' and Theme = '冠词')
+        or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '代词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '情态动词及助动词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '数词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '感叹词')
+           or (SubSubject='常识词汇及常用表达' and Topic = '基本常识' and Theme = '数字')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '连词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '介词')
+
+            ))  ORDER BY NEWID()
+
+    </select>
+    <select id="findLgdbBKlgOrgresources13" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+        SELECT top ${count} ID,IsSelect, Sentence, KnowledgeCode, KnowledgeName, SingleType , KnowledgeType
+             , QuesType , UN_Phonetic
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE  UN_Phonetic !='' and   QuesType IN ('N21','N22') and  KnowledgeType = '英语单词'  and Sentence != ''
+          and KnowledgeCode  collate Chinese_PRC_CI_AI_WS not in
+            (select KnowledgeCode from Lgdb_Basic_KnowledgeAndCode
+            where (  (SubSubject='词法词汇' and Topic = '词汇' and Theme = '冠词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '感叹词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '连词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '介词')
+
+            ))  ORDER BY NEWID()
+
+    </select>
+    <select id="findLgdbBKlgOrgresources14" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+
+        SELECT top ${count} ID,IsSelect, Sentence, KnowledgeCode, KnowledgeName, SingleType , KnowledgeType
+             , QuesType , UN_Phonetic
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE  UN_Phonetic !='' and   QuesType IN ('N21','N22') and  KnowledgeType = '英语单词'  and Sentence != ''
+          and KnowledgeCode  collate Chinese_PRC_CI_AI_WS not in
+            (select KnowledgeCode from Lgdb_Basic_KnowledgeAndCode
+            where (  (SubSubject='词法词汇' and Topic = '词汇' and Theme = '冠词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '感叹词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '连词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '介词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '情态动词及助动词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '数词')
+           or (SubSubject='常识词汇及常用表达' and Topic = '基本常识' and Theme = '数词')
+
+            ))  ORDER BY NEWID()
+    </select>
+    <select id="findLgdbBKlgOrgresources15" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+        SELECT top ${count} ID,IsSelect, Sentence, KnowledgeCode, KnowledgeName, SingleType , KnowledgeType
+             , QuesType , UN_Phonetic, MainContext
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE  UN_Phonetic !='' and   QuesType IN ('N21','N22') and  KnowledgeType = '英语单词' and  MainContext !='' and Sentence != ''
+          and KnowledgeCode  collate Chinese_PRC_CI_AI_WS not in
+            (select KnowledgeCode from Lgdb_Basic_KnowledgeAndCode
+            where (  (SubSubject='词法词汇' and Topic = '词汇' and Theme = '冠词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '代词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '感叹词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '连词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '介词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '情态动词及助动词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '数词')
+           or (SubSubject='常识词汇及常用表达' and Topic = '基本常识' and Theme = '数词')
+
+            ))  ORDER BY NEWID()
+
+
+
+    </select>
+    <select id="findLgdbBKlgOrgresources16" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+--         //  选词填空,N,20,动词复合属性,英语单词    //包含'实意动词及系动词'
+
+-- SELECT top ${count} ID
+--              ,IsSelect
+--      , Sentence
+--      , KnowledgeCode
+--      , KnowledgeName
+--      , SingleType
+--      , KnowledgeType
+--      , QuesType
+--      , US_Phonetic
+--      , MainContext
+-- FROM
+--     [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+-- WHERE     QuesType= '' and KnowledgeType = '英语单词'   and Sentence !='' and  KnowledgeCode not in ( select KnowledgeCode from dbo.Lgdb_Basic_KnowledgeAndCode
+--     where(
+--     (SubSubject='词法词汇' and Topic = '词汇' and Theme = '实意动词及系动词')
+--     or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '感叹词')
+--    or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '数词')
+--    or (SubSubject='常识词汇及常用表达' and Topic = '基本常识' and Theme = '数字')
+--    or (SubSubject='常识词汇及常用表达' and Topic = '社会交际' )
+--    or  Theme  = '情态动词及助动词'
+--     )
+--     )    ORDER BY NEWID()
+
+SELECT  top ${count} ID
+     ,IsSelect
+     , Sentence
+     , KnowledgeCode
+     , KnowledgeName
+     , SingleType
+     , KnowledgeType
+     , QuesType
+     , US_Phonetic
+     , MainContext
+FROM
+    [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+WHERE     QuesType= '' and KnowledgeType = '英语单词'   and Sentence !='' and  KnowledgeCode collate Chinese_PRC_CI_AI_WS in(
+    select KnowledgeCode from [LGDB_ResBuild_V1].[dbo].[Lgdb_Basic_KnowledgeAndCode] where Theme = '实意动词及系动词'
+    )
+ORDER BY NEWID()
+
+
+    </select>
+    <select id="findLgdbBKlgOrgresources17" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+--         //不包含'实意动词及系动词'
+
+        SELECT top ${count} ID
+             ,IsSelect
+             , Sentence
+             , KnowledgeCode
+             , KnowledgeName
+             , SingleType
+             , KnowledgeType
+             , QuesType
+             , US_Phonetic
+             , MainContext
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE     QuesType= '' and KnowledgeType = '英语单词'   and Sentence !='' and  KnowledgeCode collate Chinese_PRC_CI_AI_WS  not in ( select KnowledgeCode from [LGDB_ResBuild_V1].[dbo].[Lgdb_Basic_KnowledgeAndCode]
+            where(
+            (SubSubject='词法词汇' and Topic = '词汇' and Theme = '实意动词及系动词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '感叹词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '数词')
+           or (SubSubject='常识词汇及常用表达' and Topic = '基本常识' and Theme = '数字')
+           or (SubSubject='常识词汇及常用表达' and Topic = '社会交际' )
+           or  Theme  in ('实意动词及系动词','情态动词及助动词')
+            )
+            )    ORDER BY NEWID()
+
+
+
+
+    </select>
+    <select id="selectBLgdbBKlgOrgresource" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+        SELECT top 1000 * FROM dbo.Lgdb_B_Klg_OrgResource
+        WHERE QuesType IN ('N21','N22') order by NEWID()
+    </select>
+    <select id="findLgdbBKlgOrgresources22" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+
+        SELECT top ${count} ID
+      ,IsSelect
+             , Sentence
+             , KnowledgeCode
+             , KnowledgeName
+             , SingleType
+             , KnowledgeType
+             , QuesType
+             , US_Phonetic
+             , MainContext
+             , Translate
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE  Sentence != '' and    QuesType = ''  and Translate != ''  and  MainContext !='' and  KnowledgeType = '英语单词'
+
+          and KnowledgeCode  collate Chinese_PRC_CI_AI_WS not in
+            (select KnowledgeCode from Lgdb_Basic_KnowledgeAndCode
+            where (  (SubSubject='词法词汇' and Topic = '词汇' and Theme = '冠词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '代词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '情态动词及助动词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '感叹词')
+            ))  ORDER BY NEWID()
+
+
+
+    </select>
+    <select id="findLgdbBKlgOrgresources23" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+        SELECT top ${count} ID
+      ,IsSelect
+             , Sentence
+             , KnowledgeCode
+             , KnowledgeName
+             , SingleType
+             , KnowledgeType
+             , QuesType
+             , US_Phonetic
+             , MainContext
+             , Translate
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE  Sentence != '' and    QuesType = ''  and Translate != ''  and  MainContext !='' and  KnowledgeType = '英语单词'
+
+          and KnowledgeCode  collate Chinese_PRC_CI_AI_WS not in
+            (select KnowledgeCode from Lgdb_Basic_KnowledgeAndCode
+            where (  (SubSubject='词法词汇' and Topic = '词汇' and Theme = '冠词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '代词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '情态动词及助动词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '感叹词')
+           or (SubSubject='常识词汇及常用表达' and Topic = '社会交际' )
+            ))  ORDER BY NEWID()
+
+
+
+
+    </select>
+    <select id="findLgdbBKlgOrgresources24" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+        SELECT top ${count} ID
+      ,IsSelect
+             , Sentence
+             , KnowledgeCode
+             , KnowledgeName
+             , SingleType
+             , KnowledgeType
+             , QuesType
+             , US_Phonetic
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE QuesType= '' and Sentence != '' and   KnowledgeType = '英语单词'   and KnowledgeCode  collate Chinese_PRC_CI_AI_WS not in
+            (select KnowledgeCode from Lgdb_Basic_KnowledgeAndCode
+            where (  (SubSubject='常识词汇及常用表达' and Topic = '基本常识' and Theme = '数字')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '数词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '感叹词')
+           or (SubSubject='常识词汇及常用表达' and Topic = '社会交际' )
+            ))  ORDER BY NEWID()
+
+    </select>
+    <select id="findLgdbBKlgOrgresources25" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+        SELECT top ${count} ID
+      ,IsSelect
+             , Sentence
+             , KnowledgeCode
+             , KnowledgeName
+             , SingleType
+             , KnowledgeType
+             , QuesType
+             , US_Phonetic
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE QuesType= '' and Sentence != '' and  KnowledgeType = '英语常用表达'
+
+    </select>
+    <select id="findLgdbBKlgOrgresources26" resultType="com.lancoo.pojo.LgdbBKlgOrgresource">
+
+        SELECT top ${count} ID
+      ,IsSelect
+             , Sentence
+             , KnowledgeCode
+             , KnowledgeName
+             , SingleType
+             , KnowledgeType
+             , QuesType
+             , US_Phonetic
+        FROM
+            [LGDB_ResBuild_V1].[dbo].[Lgdb_${Stage}_Klg_OrgResource]
+        WHERE QuesType= '' and Sentence != '' and   KnowledgeType = '英语词组'   and KnowledgeCode  collate Chinese_PRC_CI_AI_WS not in
+            (select KnowledgeCode from Lgdb_Basic_KnowledgeAndCode
+            where (  (SubSubject='常识词汇及常用表达' and Topic = '基本常识' and Theme = '数字')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '数词')
+           or (SubSubject='词法词汇' and Topic = '词汇' and Theme = '感叹词')
+           or (SubSubject='常识词汇及常用表达' and Topic = '社会交际' )
+            ))  ORDER BY NEWID()
+
+    </select>
+
+
+    <update id="LgdbBKlgOrgresourceUpdate">
+
+        UPDATE dbo.Lgdb_${Stage}_Klg_OrgResource SET QuesType = #{QuesType}
+        WHERE ID=${ID}
+
+    </update>
+</mapper>

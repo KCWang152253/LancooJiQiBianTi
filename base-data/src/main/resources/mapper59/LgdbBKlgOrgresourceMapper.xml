@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lancoo.mapper59.LgdbBKlgOrgresourceMapper59" >
+  <resultMap id="BaseResultMap" type="com.lancoo.pojo59.LgdbBKlgOrgresource" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" property="id" jdbcType="BIGINT" />
+    <result column="KnowledgeCode" property="knowledgecode" jdbcType="VARCHAR" />
+    <result column="KnowledgeName" property="knowledgename" jdbcType="NVARCHAR" />
+    <result column="KnowledgeType" property="knowledgetype" jdbcType="VARCHAR" />
+    <result column="MainContext" property="maincontext" jdbcType="NVARCHAR" />
+    <result column="SecondContext" property="secondcontext" jdbcType="NVARCHAR" />
+    <result column="Sentence" property="sentence" jdbcType="NVARCHAR" />
+    <result column="Translate" property="translate" jdbcType="NVARCHAR" />
+    <result column="SingleType" property="singletype" jdbcType="NVARCHAR" />
+    <result column="UN_Phonetic" property="unPhonetic" jdbcType="NVARCHAR" />
+    <result column="US_Phonetic" property="usPhonetic" jdbcType="NVARCHAR" />
+    <result column="Source" property="source" jdbcType="NVARCHAR" />
+    <result column="IsSelect" property="isselect" jdbcType="INTEGER" />
+    <result column="Flag" property="flag" jdbcType="INTEGER" />
+    <result column="TaskId" property="taskid" jdbcType="NVARCHAR" />
+    <result column="QuesType" property="questype" jdbcType="NVARCHAR" />
+    <result column="IsDelete" property="isdelete" jdbcType="INTEGER" />
+    <result column="IsRepeat" property="isrepeat" jdbcType="NVARCHAR" />
+  </resultMap>
+  <select id="selectBLgdbBKlgOrgresource" resultType="com.lancoo.pojo59.LgdbBKlgOrgresource">
+    SELECT top 1000 * FROM dbo.Lgdb_B_Klg_OrgResource
+    WHERE QuesType IN ('N21','N22') order by NEWID()
+  </select>
+</mapper>

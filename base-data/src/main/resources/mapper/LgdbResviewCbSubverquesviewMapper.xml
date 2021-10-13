@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lancoo.mapper.LgdbResviewCbSubverquesviewMapper" >
+  <resultMap id="BaseResultMap" type="com.lancoo.pojo.LgdbResviewCbSubverquesview" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="RESOURCE_ID" property="resourceId" jdbcType="NVARCHAR" />
+    <result column="RESOURCE_NAME" property="resourceName" jdbcType="NVARCHAR" />
+    <result column="RESOURCE_TYPE" property="resourceType" jdbcType="DECIMAL" />
+    <result column="RESOURCE_LEVEL" property="resourceLevel" jdbcType="NVARCHAR" />
+    <result column="STORE_DATE" property="storeDate" jdbcType="TIMESTAMP" />
+    <result column="THEME_CODE" property="themeCode" jdbcType="NVARCHAR" />
+    <result column="THEME_KERWORD_CODE" property="themeKerwordCode" jdbcType="NVARCHAR" />
+    <result column="THEME_KERWORD_TEXT" property="themeKerwordText" jdbcType="NVARCHAR" />
+    <result column="UPPER_KNLG_CODE" property="upperKnlgCode" jdbcType="NVARCHAR" />
+    <result column="UPPER_KNLG_TEXT" property="upperKnlgText" jdbcType="NVARCHAR" />
+    <result column="SUB_QUESTION_KN_CODE" property="subQuestionKnCode" jdbcType="NVARCHAR" />
+    <result column="SUB_QUESTION_KN_MULTIPLE" property="subQuestionKnMultiple" jdbcType="NVARCHAR" />
+    <result column="SUB_QUESTION_KN_TEXT" property="subQuestionKnText" jdbcType="NVARCHAR" />
+    <result column="SUB_QUESTION_KN_UNIQUE" property="subQuestionKnUnique" jdbcType="NVARCHAR" />
+    <result column="IMPOR_KN_UNIQUE" property="imporKnUnique" jdbcType="NVARCHAR" />
+    <result column="MAIN_KN_UNIQUE" property="mainKnUnique" jdbcType="NVARCHAR" />
+    <result column="TOPIC_UNIQUE" property="topicUnique" jdbcType="NVARCHAR" />
+    <result column="THEME_TEXT" property="themeText" jdbcType="NVARCHAR" />
+    <result column="IMPOR_KN_CODE" property="imporKnCode" jdbcType="NVARCHAR" />
+    <result column="IMPOR_KN_TEXT" property="imporKnText" jdbcType="NVARCHAR" />
+    <result column="MAIN_KN_CODE" property="mainKnCode" jdbcType="NVARCHAR" />
+    <result column="MAIN_KN_TEXT" property="mainKnText" jdbcType="NVARCHAR" />
+    <result column="TOPIC_CODE" property="topicCode" jdbcType="NVARCHAR" />
+    <result column="TOPIC_TEXT" property="topicText" jdbcType="NVARCHAR" />
+    <result column="RELATED_KNOWLEDGE_CODE" property="relatedKnowledgeCode" jdbcType="NVARCHAR" />
+    <result column="RELATED_KNOWLEDGE_TEXT" property="relatedKnowledgeText" jdbcType="NVARCHAR" />
+    <result column="THEMATIC_KNOWLEDGE_CODE" property="thematicKnowledgeCode" jdbcType="NVARCHAR" />
+    <result column="THEMATIC_KNOWLEDGE_TEXT" property="thematicKnowledgeText" jdbcType="NVARCHAR" />
+    <result column="THEMATIC_KN_MULTIPLE" property="thematicKnMultiple" jdbcType="NVARCHAR" />
+    <result column="UNIT_NUM" property="unitNum" jdbcType="DECIMAL" />
+    <result column="RESOURCE_SIZE" property="resourceSize" jdbcType="DECIMAL" />
+    <result column="IS_EXPORT" property="isExport" jdbcType="INTEGER" />
+    <result column="IS_CHECK_REPEATE" property="isCheckRepeate" jdbcType="INTEGER" />
+    <result column="AUDIO_TEXT_CONTENT" property="audioTextContent" jdbcType="NVARCHAR" />
+    <result column="GUID" property="guid" jdbcType="NVARCHAR" />
+    <result column="IS_UPDATE" property="isUpdate" jdbcType="INTEGER" />
+    <result column="SOURCE_LIBRARY" property="sourceLibrary" jdbcType="NVARCHAR" />
+    <result column="RESOURCE_CLASS" property="resourceClass" jdbcType="NVARCHAR" />
+    <result column="MD5_CODE" property="md5Code" jdbcType="NVARCHAR" />
+    <result column="INSTITU_UNIT" property="instituUnit" jdbcType="NVARCHAR" />
+    <result column="RES_LENGTH" property="resLength" jdbcType="DECIMAL" />
+    <result column="DURATION_LENGTH" property="durationLength" jdbcType="DECIMAL" />
+    <result column="FILE_PATH" property="filePath" jdbcType="NVARCHAR" />
+    <result column="QUES_CONTENT" property="quesContent" jdbcType="LONGNVARCHAR" />
+    <result column="QUES_CONTENT_ORIGINAL" property="quesContentOriginal" jdbcType="LONGNVARCHAR" />
+    <result column="IS_EXSIT_MEDIA" property="isExsitMedia" jdbcType="DECIMAL" />
+    <result column="DOWNLOAD_FLAG" property="downloadFlag" jdbcType="DECIMAL" />
+    <result column="SEQUENCE" property="sequence" jdbcType="DECIMAL" />
+    <result column="HEAT_NUM" property="heatNum" jdbcType="DECIMAL" />
+    <result column="RERELIABILITY_LEVEL" property="rereliabilityLevel" jdbcType="DECIMAL" />
+    <result column="RERELIABILITY_GRADE" property="rereliabilityGrade" jdbcType="DECIMAL" />
+    <result column="DIFFCULTY_LEVEL" property="diffcultyLevel" jdbcType="DECIMAL" />
+    <result column="DIFFCULTY_GRADE" property="diffcultyGrade" jdbcType="DECIMAL" />
+    <result column="ABANDON_NUM" property="abandonNum" jdbcType="DECIMAL" />
+    <result column="ABANDON_RATE" property="abandonRate" jdbcType="DECIMAL" />
+    <result column="DISCRI_LEVEL" property="discriLevel" jdbcType="DECIMAL" />
+    <result column="DISCRI_GRADE" property="discriGrade" jdbcType="DECIMAL" />
+    <result column="LISTENING_GENRE" property="listeningGenre" jdbcType="DECIMAL" />
+    <result column="LISTENING_NUM" property="listeningNum" jdbcType="DECIMAL" />
+    <result column="LISTENING_LENGTH" property="listeningLength" jdbcType="DECIMAL" />
+    <result column="IS_USEED" property="isUseed" jdbcType="BIT" />
+    <result column="QUESTION_TYPE_CODE" property="questionTypeCode" jdbcType="VARCHAR" />
+    <result column="QUES_CHILD_NUM" property="quesChildNum" jdbcType="DECIMAL" />
+    <result column="QUES_CHILD_COUNT" property="quesChildCount" jdbcType="DECIMAL" />
+    <result column="SENSITOMETRY_GRADE" property="sensitometryGrade" jdbcType="DECIMAL" />
+    <result column="IS_DIFFICULT_QUES" property="isDifficultQues" jdbcType="INTEGER" />
+    <result column="MEDIA_URL" property="mediaUrl" jdbcType="NVARCHAR" />
+    <result column="SUB_OBJ" property="subObj" jdbcType="DECIMAL" />
+    <result column="APPLY_TOTAL_TIME" property="applyTotalTime" jdbcType="DECIMAL" />
+    <result column="SUBJECT_CODE" property="subjectCode" jdbcType="VARCHAR" />
+    <result column="ANS_TYPE" property="ansType" jdbcType="DECIMAL" />
+    <result column="FILE_CONTENT" property="fileContent" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <select id="selectQuesContent" resultType="java.lang.String">
+    select QUES_CONTENT from  Lgdb_ResView_CB_SubVerQuesView  where QUESTION_TYPE_CODE = 'A'
+  </select>
+</mapper>

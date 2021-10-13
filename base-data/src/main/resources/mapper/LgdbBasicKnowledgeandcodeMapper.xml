@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lancoo.mapper.LgdbBasicKnowledgeandcodeMapper" >
+  <resultMap id="BaseResultMap" type="com.lancoo.pojo.LgdbBasicKnowledgeandcode" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="Knowledge" property="knowledge" jdbcType="NVARCHAR" />
+    <result column="KnowledgeCode" property="knowledgecode" jdbcType="NVARCHAR" />
+    <result column="Stage" property="stage" jdbcType="NVARCHAR" />
+    <result column="SubSubject" property="subsubject" jdbcType="NVARCHAR" />
+    <result column="Topic" property="topic" jdbcType="NVARCHAR" />
+    <result column="Theme" property="theme" jdbcType="NVARCHAR" />
+    <result column="Is_shield" property="isShield" jdbcType="INTEGER" />
+  </resultMap>
+  <select id="selectThemeByKnowledeCode" resultType="java.lang.String" parameterType="java.lang.String">
+    select Top 1 Theme from [LGDB_ResBuild_V1].[dbo].[Lgdb_Basic_KnowledgeAndCode] where KnowledgeCode =  #{knowledgecode} and Is_shield !=1
+
+  </select>
+  <select id="selectThemes" resultType="java.lang.String">
+      select top 6 * from (
+         select  distinct Theme from [LGDB_ResBuild_V1].[dbo].[Lgdb_Basic_KnowledgeAndCode] where
+        Theme not in ( select  distinct Theme from [LGDB_ResBuild_V1].[dbo].[Lgdb_Basic_KnowledgeAndCode]
+        where  ( (SubSubject ='词法词汇' and Topic = '词汇' and Theme = '感叹词')
+                or (SubSubject ='词法词汇' and Topic = '词汇' and Theme = '数词')
+                or (SubSubject ='常识词汇及常用表达' and Topic = '基本常识' and Theme = '数字')
+                or (SubSubject ='常识词汇及常用表达' and Topic = '社会交际' )
+                or  Theme  in ('实意动词及系动词','情态动词及助动词'))
+                )
+          ) as a order by NEWID()
+
+
+  </select>
+    <select id="selectThemeByKnowledge" resultType="java.lang.String" parameterType="java.lang.String">
+        select distinct Theme from [LGDB_ResBuild_V1].[dbo].[Lgdb_Basic_KnowledgeAndCode] where Knowledge =   #{Knowledge} and Is_shield !=1
+
+    </select>
+
+</mapper>

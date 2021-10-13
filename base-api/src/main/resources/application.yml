@@ -1,0 +1,82 @@
+server:
+  port: 8082
+  tomcat:
+    uri-encoding: UTF-8
+  max-http-header-size: 80KB
+  servlet:
+    context-path: /question
+############################################################
+#
+# 配置数据源信息
+#
+############################################################
+spring:
+  profiles:
+    active: pro
+  datasource:
+    hikari:
+      connection-timeout: 30000 # 等待连接池分配连接的最大时长（毫秒），超过这个时长还没可用的连接则发生SQ
+      minimum-idle: 5 # 最小连接数
+      maximum-pool-size: 20 # 最大连接数
+      auto-commit: true # 自动提交
+      idle-timeout: 600000 # 连接超时的最大时长（毫秒），超时则被释放（retired），默认:10分钟
+      pool-name: DateSourceHikariCP # 连接池名字
+      max-lifetime: 1800000 # 连接的生命时长（毫秒），超时而且没被使用则被释放（retired），默认:30分钟
+      connection-test-query: SELECT 1
+    dynamic:
+      primary: master
+      strict: false #设置严格模式,默认false不启动. 启动后在未匹配到指定数据源时候会抛出异常,不启动则使用默认数据源.
+      datasource:
+        master:
+          type: com.zaxxer.hikari.HikariDataSource
+          username: sa
+          password: Lg123456
+          url: jdbc:sqlserver://172.16.42.173:1433;DatabaseName=LGDB_ResBuild_V1;useUnicode=true&characterEncoding=utf-8
+          driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+        59:
+          type: com.zaxxer.hikari.HikariDataSource
+          username: sa
+          password: Lg123456
+          url: jdbc:sqlserver://172.16.42.59:1433;DatabaseName=LGDB_ResBuild_V1;useUnicode=true&characterEncoding=utf-8
+          driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+        138:
+          type: com.zaxxer.hikari.HikariDataSource
+          username: LangeSoftUSE_YYRESL
+          password: LangeSoftPWD_YYRESL
+          url: jdbc:sqlserver://172.16.42.138:1433;DatabaseName=LGDB_Resbuilder_V5;useUnicode=true&characterEncoding=utf-8
+          driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  redis:
+    database: 1
+    host: 172.16.42.173
+    port: 6379
+    password:
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+############################################################
+#
+# mybatis 配置
+#
+############################################################
+mybatis:
+  mapper-locations: classpath:mapper/*.xml # mapper映射文件
+  type-aliases-package: com.lancoo.pojo # 所有POJO类所在包路径
+  map-underscore-to-camel-case: true
+  mybatis.configuration.map-underscore-to-camel-case: true
+  mybatis.configuration.mapUnderscoreToCamelCase: true
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+# 防止XSS攻击，enabled开启或关闭，excludePatterns忽略过滤的接口
+mica:
+  xss:
+    enabled: true
+    excludePatterns:
+      - /login
+      - /logout
+

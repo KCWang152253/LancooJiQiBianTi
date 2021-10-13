@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lancoo.mapper.LgdbBasicQuestionclassifynameMapper" >
+  <resultMap id="BaseResultMap" type="com.lancoo.pojo.LgdbBasicQuestionclassifyname" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="NewProperty" property="newproperty" jdbcType="NVARCHAR" />
+    <result column="Name" property="name" jdbcType="NVARCHAR" />
+  </resultMap>
+    <select id="selectNewproperty" resultType="java.lang.String">
+      SELECT top 1 * FROM dbo.Lgdb_Basic_questionclassifyName
+      WHERE Name=#{newProperty}
+    </select>
+</mapper>
