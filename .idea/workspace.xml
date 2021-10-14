@@ -5,286 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f08ffd64-e419-4a19-a978-981cbeff57d1" name="Default Changelist" comment="2021年10月13日">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/$PROJECT_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_gjing_tools_httpclient_1_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_5_4_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_68.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_auth0_java_jwt_3_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_dynamic_datasource_spring_boot_starter_3_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_03.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_xiaoymin_swagger_bootstrap_ui_1_8_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_sqlserver_mssql_jdbc_6_2_0_jre8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_2_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__fr_opensagres_xdocreport_xdocreport_1_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_36_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_36_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_36_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_36_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_36_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_36_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_persistence_api_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jaxen_jaxen_1_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_dreamlu_mica_core_2_0_9_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_dreamlu_mica_xss_2_0_9_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_core_3_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_bindings_soap_3_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_bindings_xml_3_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_databinding_jaxb_3_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_frontend_jaxws_3_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_frontend_simple_3_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_transports_http_3_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_ws_addr_3_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_ws_policy_3_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_cxf_cxf_rt_wsdl_3_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_neethi_neethi_3_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_ooxml_schemas_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_scratchpad_3_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ws_xmlschema_xmlschema_core_2_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_woodstox_core_asl_4_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_16_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_base_1_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_core_1_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_extra_1_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_1_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_autoconfigure_2_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_starter_2_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_weekend_1_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__wsdl4j_wsdl4j_1_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_resolver_xml_resolver_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-api/base-api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-api/src/main/java/com/lancoo/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-api/src/main/java/com/lancoo/RestTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-api/src/main/java/com/lancoo/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-api/src/main/java/com/lancoo/configuration/AuthorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-api/src/main/java/com/lancoo/configuration/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-api/src/main/java/com/lancoo/controller/answer/AnswerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-api/src/main/java/com/lancoo/controller/jiqibiantimanager/JiQiBianTiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-api/src/main/java/com/lancoo/controller/quesmanager/QuesManagerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-api/src/main/java/com/lancoo/global/exception/MyExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-api/src/main/java/com/lancoo/global/exception/MyRuntimeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-api/src/main/java/com/lancoo/interceptor/AuthorizationInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-api/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-api/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-api/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/base-common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/ChangeAbility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/encodeanddecode/CodeStr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/encodeanddecode/CodeXml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/grace/result/GraceJSONResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/grace/result/IMOOCJSONResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/grace/result/ResponseStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/http/utils/HttpRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/http/utils/HttpServletRequestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/http/utils/InterfaceRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/http/utils/RestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/http/utils/XmlUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/response/CommonCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/response/QueryResponseResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/response/QueryResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/response/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/response/ResponseResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/response/ResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/thread/ThreadConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/ConnectionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/CxfClientUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/EncodingUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/FileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/FtpUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/JsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/MD5Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/RandomCodeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/RedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/SpokenXmlUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/UrlUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/UuidUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/WordToHtmlUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/Xml2StringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/XmlFormatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-common/src/main/java/com/lancoo/utils/XmlUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/base-data.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/mapper/KcShuCaiInfMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/mapper/LgdbBKlgOrgresourceMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/mapper/LgdbBasicKnowledgeandcodeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/mapper/LgdbBasicQuestionclassifynameMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/mapper/LgdbBasicQuestypeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/mapper/LgdbCKlgOrgresourceMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/mapper/LgdbQuesBasicinfoCbhMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/mapper/LgdbQuesBasicinfoCchMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/mapper/LgdbRescatalogPrivateMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/mapper/LgdbResviewCbSubverquesviewMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/mapper/LgdbTaskinfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/mapper/RightAnswerDisturbMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/mapper59/LgdbBKlgOrgresourceMapper59.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/mysqlmapper/MysqlMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/pojo/LgdbBKlgOrgresource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/pojo/LgdbBasicKnowledgeandcode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/pojo/LgdbBasicQuestionclassifyname.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/pojo/LgdbBasicQuestype.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/pojo/LgdbCKlgOrgresource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/pojo/LgdbFKlgOrgResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/pojo/LgdbQuesBasicinfoCbh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/pojo/LgdbQuesBasicinfoCch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/pojo/LgdbRescatalogPrivate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/pojo/LgdbResviewCbSubverquesview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/pojo/LgdbTaskinfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/pojo/RightAnswerDisturb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/java/com/lancoo/pojo59/LgdbBKlgOrgresource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/resources/mapper/LgdbBKlgOrgresourceMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/resources/mapper/LgdbBKlgOrgresourceMapper59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/resources/mapper/LgdbBasicKnowledgeandcodeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/resources/mapper/LgdbBasicQuestionclassifynameMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/resources/mapper/LgdbBasicQuestypeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/resources/mapper/LgdbCKlgOrgresourceMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/resources/mapper/LgdbQuesBasicinfoCchMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/resources/mapper/LgdbResviewCbSubverquesviewMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/resources/mapper/LgdbTaskinfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/resources/mapper/RightAnswerDisturbMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-data/src/main/resources/mapper59/LgdbBKlgOrgresourceMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/base-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/answer/AmswerInsertService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/answer/AnswerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/constant/QuesConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/dto/JiQiChoseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/dto/KlgAddUpdateDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/dto/QuesAddUpdateDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/dto/QuesChildDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/dto/QuesContentDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/dto/QuesInfoViewDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/dto/QuesPageParamDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/dto/QuesStatusChangeDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/dto/QuesTypeAddUpdateDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/dto/QuesUserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/dto/QuesViewDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/dto/jiqiDao/BasicSysconfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/dto/jiqiDao/ContentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/dto/jiqiDao/DigitQuesDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/dto/jiqiDao/QuesBasicinfoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/interfacee/Standard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/DigitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/EnglishQuesRecognitionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/FormProjectService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/HelperService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/InvokeTestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/LgdbTaskinfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/MainService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/QuesTypeAService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/RgSingletonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/quesmanager/KcShuCaiInfService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/quesmanager/LgdbQuesBasicinfoCbhService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/quesmanager/LgdbRescatalogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/quesmanager/QuesManagerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/quesmanager/TiXingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/thread/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,6 +40,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="71038470a85b94e8479a8c5340f2656f4a7e9066" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -467,9 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReadWriteFileWithEncode" />
+        <item itemvalue="Application.FileTest" />
+        <item itemvalue="Application.EncodingUtil" />
         <item itemvalue="Application.EncodingUtil" />
         <item itemvalue="Application.FileTest" />
-        <item itemvalue="Application.ReadWriteFileWithEncode" />
       </list>
     </recent_temporary>
   </component>
@@ -515,8 +243,16 @@
       <workItem from="1633740978194" duration="2278000" />
       <workItem from="1633743303297" duration="263000" />
       <workItem from="1633743596455" duration="19007000" />
-      <workItem from="1633915884214" duration="67303000" />
+      <workItem from="1633915884214" duration="70042000" />
     </task>
+    <task id="LOCAL-00001" summary="2021年10月13日">
+      <created>1634131562694</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634131562694</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,6 +264,49 @@
         <entry key="MAIN">
           <value>
             <State />
+          </value>
+        </entry>
+        <entry key="aef2629d-ebaf-4af0-b463-dfcfc8e72cba">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="aef2629d-ebaf-4af0-b463-dfcfc8e72cba" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
