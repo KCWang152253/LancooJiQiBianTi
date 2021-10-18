@@ -2209,8 +2209,6 @@ public class QuesTypeAService {
         //获取去掉标签的句子
         String sentence = item.getSentence();
         String textSentence = helperService.getTextFromTHML(sentence);
-
-
         String lastword = textSentence.substring(textSentence.length() - 1);
         String textSentence2 = textSentence.substring(0, textSentence.length() - 1);
         // 造出题干
@@ -2225,7 +2223,6 @@ public class QuesTypeAService {
                 //分割打乱作为题干
                 //待测试
                 String[] randomStringList = helperService.randomStringList(s);
-
                 for (int i = 0; i < randomStringList.length; i++) {
                     if (i == (randomStringList.length - 1)) {
                         askstr += "__" + lastword;
@@ -2244,6 +2241,13 @@ public class QuesTypeAService {
             } else {
                 String[] randomStringList = helperService.randomStringList(s);
                 for (int i = 0; i < randomStringList.length; i++) {
+                    if (i == (randomStringList.length - 1)) {
+                        askstr += "__" + lastword;
+                        ;
+                    } else {
+                        askstr += "__" + " ";
+                        ;
+                    }
                     if (i == (randomStringList.length - 1)) {
                         ask += randomStringList[i] + lastword;
                     } else {

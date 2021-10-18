@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f08ffd64-e419-4a19-a978-981cbeff57d1" name="Default Changelist" comment="2021年10月13日">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/HelperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/HelperService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/QuesTypeAService.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/QuesTypeAService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +38,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -76,6 +79,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JiqiBianTi3/kcwang" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -102,6 +107,12 @@
       <recent name="D:\项目资料\试卷导入项目\svn\后端\question\question-common" />
       <recent name="D:\项目资料\试卷导入项目\svn\后端\question\question-api" />
       <recent name="D:\项目资料\试卷导入项目\svn\后端\question\question-common\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.lancoo.controller.answer" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.lancoo.service.thread" />
@@ -156,15 +167,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -243,7 +252,8 @@
       <workItem from="1633740978194" duration="2278000" />
       <workItem from="1633743303297" duration="263000" />
       <workItem from="1633743596455" duration="19007000" />
-      <workItem from="1633915884214" duration="70042000" />
+      <workItem from="1633915884214" duration="70687000" />
+      <workItem from="1634177428113" duration="22463000" />
     </task>
     <task id="LOCAL-00001" summary="2021年10月13日">
       <created>1634131562694</created>
@@ -252,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634131562694</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2021年10月13日">
+      <created>1634176756807</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634176756807</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +280,24 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
         <entry key="aef2629d-ebaf-4af0-b463-dfcfc8e72cba">
@@ -291,11 +325,6 @@
         </entry>
       </map>
     </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="aef2629d-ebaf-4af0-b463-dfcfc8e72cba" value="TOOL_WINDOW" />
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -311,6 +340,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2021年10月13日" />

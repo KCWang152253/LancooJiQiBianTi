@@ -753,7 +753,7 @@ public class HelperService {
         //--返回造出的题干选项答案
         quesOptionAsk = "<QuesOptionAsk audio=\"\" orgname=\"\">" + quesOptionAsk + "</QuesOptionAsk>";
         quesAnswer = "<QuesAnswer> " + fileterMark(awser.substring(0, awser.length() - 2)) + " </QuesAnswer>";
-        return quesOptionAsk + option + quesAnswer;
+        return  option + quesOptionAsk +  quesAnswer;
     }
 
     /*******************************************************************
@@ -836,7 +836,7 @@ public class HelperService {
         quesOptionAsk = "<QuesOptionAsk audio=\"\" orgname=\"\">" + quesOptionAsk + "</QuesOptionAsk>";
 
         quesAnswer = "<QuesAnswer> " + fileterMark(awser.substring(0, awser.length() - 2)) + " </QuesAnswer>";
-        return quesOptionAsk + option + quesAnswer;
+        return option + quesOptionAsk +  quesAnswer;
     }
 
 }
