@@ -244,7 +244,7 @@ public class FormProjectService {
                     // Optional.ofNullable(m).map(c ->helperService.getTextFromTHML(c.getSentence())).orElse("getSentence为空").va;
                     String textSentence = helperService.getTextFromTHML(m.getSentence());
                     int mlength = textSentence.split(" ").length;
-                    if (5 < mlength && mlength < 15) {
+                    if (4 < mlength && mlength < 16 && textSentence.contains("Ж")) {
                         if (StringUtils.isEmpty(str)) {
                             str += textSentence.split("Ж")[0] + "|";
                             str1.append(textSentence.split("Ж")[1]).append("|");
