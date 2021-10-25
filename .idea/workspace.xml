@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f08ffd64-e419-4a19-a978-981cbeff57d1" name="Default Changelist" comment="2021年10月18日">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/FormProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/FormProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-api/base-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/base-api/base-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-service/base-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/base-service/base-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/HelperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/HelperService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +256,7 @@
       <workItem from="1633743303297" duration="263000" />
       <workItem from="1633743596455" duration="19007000" />
       <workItem from="1633915884214" duration="70687000" />
-      <workItem from="1634177428113" duration="28405000" />
+      <workItem from="1634177428113" duration="44859000" />
     </task>
     <task id="LOCAL-00001" summary="2021年10月13日">
       <created>1634131562694</created>
@@ -275,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634535826575</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2021年10月18日">
+      <created>1634542403794</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1634542403794</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,21 +406,6 @@
           <url>file://$PROJECT_DIR$/base-api/src/main/java/com/lancoo/interceptor/AuthorizationInterceptor.java</url>
           <line>28</line>
           <option name="timeStamp" value="196" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/HelperService.java</url>
-          <line>305</line>
-          <option name="timeStamp" value="199" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/QuesTypeAService.java</url>
-          <line>2413</line>
-          <option name="timeStamp" value="203" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/FormProjectService.java</url>
-          <line>244</line>
-          <option name="timeStamp" value="204" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

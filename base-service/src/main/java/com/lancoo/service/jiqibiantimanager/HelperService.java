@@ -5,6 +5,7 @@ import com.lancoo.mapper.LgdbCKlgOrgresourceMapper;
 import com.lancoo.pojo.LgdbBKlgOrgresource;
 import com.lancoo.pojo.LgdbCKlgOrgresource;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.collections.map.ListOrderedMap;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -723,20 +724,21 @@ public class HelperService {
         //--把选项打乱顺序生成新顺序
         list = randomSortList(list);//打乱顺序
         int sortCount = 0;
-        HashMap<HashMap<Integer, String>, Integer> dicSort = new HashMap<>();
+        //HashMap<HashMap<Integer, String>, Integer> dicSort = new HashMap<>();
+        Map<HashMap<Integer, String>, Integer> map = new ListOrderedMap();
         for (int i = 0; i < list.size(); i++) {
             ++sortCount;
-            dicSort.put(list.get(i), sortCount);
+            map.put(list.get(i), sortCount);
         }
         //--遍历Option 选项
-        for (Map.Entry<HashMap<Integer, String>, Integer> item : dicSort.entrySet()) {
+        for (Map.Entry<HashMap<Integer, String>, Integer> item : map.entrySet()) {
             for (Map.Entry<Integer, String> itemChild1 : item.getKey().entrySet()) {
                 option += "<QuesOption index=\"" + item.getValue() + "\">" + itemChild1.getValue() + "</QuesOption>";
             }
         }
         //--筛选掉干扰项--拼接答案
         for (Map.Entry<Integer, String> itemChild : listAsk.entrySet()) {
-            for (Map.Entry<HashMap<Integer, String>, Integer> item : dicSort.entrySet()) {
+            for (Map.Entry<HashMap<Integer, String>, Integer> item : map.entrySet()) {
                 for (Map.Entry<Integer, String> itemChild1 : item.getKey().entrySet()) {
                     if (itemChild.getKey().equals(itemChild1.getKey())) {
                         awser += handleAnswer(item.getValue().toString()) + "$、";
@@ -808,20 +810,28 @@ public class HelperService {
         //----把选项打乱顺序生成新顺序
         list = randomSortList(list);//打乱顺序
         int sortCount = 0;
-        HashMap<HashMap<Integer, String>, Integer> dicSort = new HashMap<>();
+       // HashMap<HashMap<Integer, String>, Integer> dicSort = new HashMap<>();
+        Map<HashMap<Integer, String>, Integer> map = new ListOrderedMap();
         for (int i = 0; i < list.size(); i++) {
             ++sortCount;
-            dicSort.put(list.get(i), sortCount);
+            map.put(list.get(i),sortCount);
+           // dicSort.put(list.get(i), sortCount);
         }
         //----遍历Option
-        for (Map.Entry<HashMap<Integer, String>, Integer> item : dicSort.entrySet()) {
+        for (Map.Entry<HashMap<Integer, String>, Integer> item : map.entrySet()) {
             for (Map.Entry<Integer, String> itemChild1 : item.getKey().entrySet()) {
                 option += "<QuesOption index=\"" + item.getValue() + "\">" + itemChild1.getValue() + "</QuesOption>";
             }
         }
+
+
+
+
+
+
         //----筛选掉干扰项拼接答案
         for (Map.Entry<Integer, String> itemChild : listAsk.entrySet()) {
-            for (Map.Entry<HashMap<Integer, String>, Integer> item : dicSort.entrySet()) {
+            for (Map.Entry<HashMap<Integer, String>, Integer> item : map.entrySet()) {
                 for (Map.Entry<Integer, String> itemChild1 : item.getKey().entrySet()) {
                     if (itemChild.getKey().equals(itemChild1.getKey())) {
                         awser += handleAnswer(item.getValue().toString()) + "$、";
