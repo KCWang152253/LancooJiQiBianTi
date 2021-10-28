@@ -3,14 +3,13 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BeansEndpointTabSettings">
+    <option name="diagramMode" value="true" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f08ffd64-e419-4a19-a978-981cbeff57d1" name="Default Changelist" comment="2021年10月18日">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+    <list default="true" id="f08ffd64-e419-4a19-a978-981cbeff57d1" name="Default Changelist" comment="2021年10月25日">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-api/base-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/base-api/base-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-service/base-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/base-service/base-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/HelperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/base-service/src/main/java/com/lancoo/service/jiqibiantimanager/HelperService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/base-api/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,13 +169,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -256,7 +257,8 @@
       <workItem from="1633743303297" duration="263000" />
       <workItem from="1633743596455" duration="19007000" />
       <workItem from="1633915884214" duration="70687000" />
-      <workItem from="1634177428113" duration="44859000" />
+      <workItem from="1634177428113" duration="50331000" />
+      <workItem from="1635299361408" duration="8737000" />
     </task>
     <task id="LOCAL-00001" summary="2021年10月13日">
       <created>1634131562694</created>
@@ -286,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634542403794</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2021年10月25日">
+      <created>1635149114058</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1635149114058</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +371,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2021年10月13日" />
     <MESSAGE value="2021年10月18日" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021年10月18日" />
+    <MESSAGE value="2021年10月25日" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021年10月25日" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
